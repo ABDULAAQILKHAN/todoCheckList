@@ -3,6 +3,7 @@ const router = express.Router();
 const taskController = require('../controller/taskController');
 
 router.post("/trial",taskController.trial)
+router.post("/fetchtask",taskController.fetchtask)
 router.post("/addTask",taskController.addTask)
 router.post("/editTask",taskController.editTask)
 router.post("/deleteTask",taskController.deleteTask)

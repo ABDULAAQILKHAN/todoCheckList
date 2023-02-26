@@ -9,6 +9,11 @@ const trial = require('./routes/taskRoute');
 const server = express();
 server.use(cors());
 mongoose.set('strictQuery', false);
+server.use(express.json());
+server.use(express.json());
+server.use (express.urlencoded({
+    extended: true
+}));
 connect.userconnect("Main")
 
 //Routes
