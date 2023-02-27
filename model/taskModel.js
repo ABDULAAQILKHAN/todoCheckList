@@ -3,8 +3,10 @@ const mongoose = require("mongoose")
 //defining tasks schema
 
 const taskSchema = new mongoose.Schema({
-    email: String,
-    tasks: []
+    task: {
+        Date: Date,
+        task: String
+    }
 })
 const Tasks = new mongoose.model("Tasks", taskSchema);
 mongoose.set('strictQuery', false);

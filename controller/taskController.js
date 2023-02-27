@@ -3,18 +3,19 @@ const Model = require('../model/taskModel');
 const trial = (req, res)=>{
     res.send({msg: "task trial"});
     console.log('trial')
+
 }
 const fetchtask = (req,res)=>{
     console.log("fetching task")
 }
 const addTask = (req,res)=>{
     let task = req.body.task;
-    Model.updateOne({},{$push:{
+    let saveTask = new Model({
         tasks: task
-    }},(err,done)=>{
-        err?res.send(err):res.send(done)
     })
-    
+    saveTask.save((saved,err)=>{
+        saved?console.log(saved):console.log(err)
+    })
 }
 const editTask = (req,res)=>{
     console.log("edit task")

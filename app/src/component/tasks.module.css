@@ -24,6 +24,7 @@
     color: grey;
 }
 .input:focus{
+    background-color: transparent;
     outline: 3px solid orange;
 }
 .addbtn{
@@ -35,6 +36,38 @@
     font-size: 5vh;
     color: orange;
 }
+button:hover{
+    cursor: pointer;
+    color:aliceblue;
+    background-color: orange;
+}
+.list{
+    border: 2px solid orange;
+    width:70%;
+    color: orange;
+    text-align: left;
+    font-size: 3.5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.item{
+    margin-left: 8%;
+}
+.delbtn{
+    background-color: transparent;
+    width: 25%;
+    font-size: 8vh;
+    color: orange;
+    border: none;
+    outline: none;
+}
+.delbtn:hover{
+    cursor: pointer;
+    color:aliceblue;
+    background-color: orange;
+}
+
 @media only screen and (max-width: 600px) {
     .container{
         width: 95%;
