@@ -13,10 +13,10 @@ const taskReducer = (state=initialState,action) =>{
             return {
                 ...state,list: newList
                 } 
-        case "checkTask":
+        case "removeAllTask":
                 return{
-                    
-                }
+                    ...state,list:[]
+                }   
             default: return state;
         }
 }

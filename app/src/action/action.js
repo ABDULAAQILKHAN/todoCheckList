@@ -13,8 +13,8 @@ export const removeTask = (id)=>{
         id
     }
 }
-export const checkTask = ()=>{
+export const removeAllTask = ()=>{
     return {
-        type: "checkTask"
+        type: "removeAllTask"
     }
 }

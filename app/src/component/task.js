@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from "react";
 import axios from "axios";
 import css from './tasks.module.css';
-import { addTask,deleteTask,removeTask } from "../action/action";
+import { addTask,deleteTask,removeAllTask,removeTask } from "../action/action";
 import {useSelector,useDispatch} from 'react-redux'
 //import {useNavigate} from 'react-router-dom';
 
@@ -40,9 +40,6 @@ const Tasks = ()=>{
             {
             //start of top
             }
-            <div className={css.top}>
-
-            </div>
             {
                 // end of top and start of mid bottom
             }
@@ -70,7 +67,9 @@ const Tasks = ()=>{
 
                
                 </div>
-
+                <br />
+                <button className={css.rmbtn} onClick={()=>dispatch(removeAllTask())
+                }>Remove all</button>
             </div>
 
         </div>

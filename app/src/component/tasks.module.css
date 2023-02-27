@@ -1,7 +1,10 @@
+body{
+
+    background-color: rgba(0, 0, 0, 0.829);
+}
 .container{
     width: 80%;
     margin-top: 5%;
-    background-color: rgba(0, 0, 0, 0.829);
 }
 .top{
     min-height: 300px;
@@ -10,7 +13,7 @@
 .mid_bottom{
     margin-top: 5%;
     min-height: 200px;
-    border: 5px solid red;
+    border: 2px dashed orange;
 }
 .input{
     height: 50px;
@@ -66,6 +69,14 @@ button:hover{
     cursor: pointer;
     color:aliceblue;
     background-color: orange;
+}
+.rmbtn{
+    font-size: 2vh;
+    background-color: transparent;
+    border: none;
+    outline: 1px solid orange;
+    padding: 8px;
+    color: orange;
 }
 
 @media only screen and (max-width: 600px) {
